@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamingo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: white;
+      flex-direction: column;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Comfortaa', sans-serif;
+      color: #FC8EAC;
+      /* Flamingo color */
+      font-size: 5vw;
+      /* Responsive font size */
+      margin: 0;
+    }
+
+    .powered-by {
+      font-family: 'Comfortaa', sans-serif;
+      color: black;
+      font-size: 1.25vw;
+      /* 1/4 of Flamingo (5vw / 4 = 1.25vw) */
+      text-align: right;
+      margin-top: 5px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+
+      /* Tablets */
+      h1 {
+        font-size: 8vw;
+      }
+
+      .powered-by {
+        font-size: 2vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Mobile phones */
+      h1 {
+        font-size: 10vw;
+      }
+
+      .powered-by {
+        font-size: 2.5vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Flamingo</h1>
+    <div class="powered-by">Powered by DUZU</div>
+  </div>
+</body>
+
+</html>
